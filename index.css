@@ -1,0 +1,318 @@
+/* 设置全局样式 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* 爱丽丝蓝 */
+    color: #333; /* 深灰色 */
+    margin: 0;
+    padding: 0;
+}
+
+/* 头部区域样式 */
+header .logo-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6495ed; /* 矢车菊蓝 */
+    padding: 20px;
+}
+
+header .logo-title img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+header .logo-title h1 {
+    font-size: 24px;
+    color: #fff;
+}
+
+/* 主体盒子样式 */
+.main-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* 轮播图样式 */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9比例 */
+    overflow: hidden;
+}
+
+.carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.carousel img:first-child {
+    display: block;
+}
+
+.carousel .prev, .carousel .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel .prev {
+    left: 10px;
+}
+
+.carousel .next {
+    right: 10px;
+}
+
+/* 导航栏样式 */
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #6495ed; /* 矢车菊蓝 */
+}
+
+.main-nav ul li {
+    position: relative;
+}
+
+.main-nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-nav ul li a:hover {
+    background-color: #4169e1;
+}
+
+/* 下拉框样式 */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #6495ed; /* 矢车菊蓝 */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    width: 200px;
+}
+
+.dropdown-content li a {
+    padding: 10px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.dropdown-content li a:hover {
+    background-color: #4169e1;
+}
+
+/* 显示下拉菜单时的样式 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 左侧导航栏样式 */
+.side-nav {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #6495ed; /* 矢车菊蓝 */
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+}
+
+.side-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-nav ul li {
+
+    margin: 10px 0;
+}
+
+.side-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.side-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* 底部区域样式 */
+footer {
+    background-color: #6495ed; /* 矢车菊蓝 */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+}
+
+footer .social-media img {
+    width: 20px;
+    height: 20px;
+}
+
+/* 动漫介绍部分样式 */
+.anime-introduction, .characters-introduction, .recommended-episodes, .audience-reviews {
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.anime-introduction h2, .characters-introduction h2, .recommended-episodes h2, .audience-reviews h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.anime-introduction p, .characters-introduction p, .recommended-episodes p, .audience-reviews p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* 角色介绍部分样式 */
+.character {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.character-img {
+    width: 200px; /* 固定宽度 */
+    height: 112.5px; /* 16:9比例的高度 */
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+}
+
+.character h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+/* 推荐剧集部分样式 */
+.episode {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.episode-img {
+    width: 200px; /* 固定宽度 */
+    height: 112.5px; /* 16:9比例的高度 */
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+}
+
+.episode h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+/* 观众评价部分样式 */
+.review {
+    margin-bottom: 10px;
+}
+
+.review p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+/* 视频播放部分样式 */
+.video-section {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9比例 */
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/* 角色介绍表单样式 */
+.characters-form {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.characters-form h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.character-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #6495ed; /* 蓝色框 */
+}
+
+.character-table th, .character-table td {
+    border: 1px solid #6495ed; /* 蓝色框 */
+    padding: 10px;
+    text-align: left;
+}
+
+.character-table th {
+    background-color: #6495ed; /* 矢车菊蓝 */
+    color: #fff;
+}
+
+.character-img {
+    width: 160px; /* 固定宽度 */
+    height: 90px; /* 16:9比例的高度 */
+    object-fit: cover;
+    border-radius: 5px;
+}
