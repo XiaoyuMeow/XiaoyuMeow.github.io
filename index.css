@@ -12,7 +12,7 @@ header .logo-title {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #6495ed; /* 矢车菊蓝 */
+    background-color: #F1C454; /* 矢车菊蓝 */
     padding: 20px;
 }
 
@@ -85,7 +85,7 @@ header .logo-title h1 {
     margin: 0;
     display: flex;
     justify-content: center;
-    background-color: #6495ed; /* 矢车菊蓝 */
+    background-color: #F1C454; /* 矢车菊蓝 */
 }
 
 .main-nav ul li {
@@ -97,10 +97,22 @@ header .logo-title h1 {
     padding: 10px 20px;
     color: #fff;
     text-decoration: none;
+    transition: transform 0.3s; /* 添加过渡效果 */
 }
 
 .main-nav ul li a:hover {
     background-color: #4169e1;
+    animation: zoom 0.3s forwards; /* 鼠标悬停时触发动画 */
+}
+
+/* 定义缩放动画 */
+@keyframes zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
 }
 
 /* 下拉框样式 */
@@ -109,7 +121,7 @@ header .logo-title h1 {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #6495ed; /* 矢车菊蓝 */
+    background-color: #F1C454; /* 矢车菊蓝 */
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
@@ -140,7 +152,7 @@ header .logo-title h1 {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #6495ed; /* 矢车菊蓝 */
+    background-color: #F1C454; /* 矢车菊蓝 */
     padding: 10px;
     border-radius: 0 10px 10px 0;
 }
@@ -152,7 +164,6 @@ header .logo-title h1 {
 }
 
 .side-nav ul li {
-
     margin: 10px 0;
 }
 
@@ -167,7 +178,7 @@ header .logo-title h1 {
 
 /* 底部区域样式 */
 footer {
-    background-color: #6495ed; /* 矢车菊蓝 */
+    background-color: #F1C454; /* 矢车菊蓝 */
     color: #fff;
     text-align: center;
     padding: 10px;
@@ -214,6 +225,11 @@ footer .social-media img {
     background-size: cover;
     background-position: center;
     margin-right: 20px;
+    transition: transform 0.3s; /* 添加过渡效果 */
+}
+
+.character-img:hover {
+    animation: zoom 0.3s forwards; /* 鼠标悬停时触发动画 */
 }
 
 .character h3 {
@@ -250,6 +266,7 @@ footer .social-media img {
     font-size: 16px;
     line-height: 1.6;
 }
+
 /* 视频播放部分样式 */
 .video-section {
     padding: 20px;
@@ -280,6 +297,7 @@ footer .social-media img {
     object-fit: cover;
     border-radius: 10px;
 }
+
 /* 角色介绍表单样式 */
 .characters-form {
     padding: 20px;
@@ -296,17 +314,17 @@ footer .social-media img {
 .character-table {
     width: 100%;
     border-collapse: collapse;
-    border: 2px solid #6495ed; /* 蓝色框 */
+    border: 2px solid #F1C454; /* 蓝色框 */
 }
 
 .character-table th, .character-table td {
-    border: 1px solid #6495ed; /* 蓝色框 */
+    border: 1px solid #F1C454; /* 蓝色框 */
     padding: 10px;
     text-align: left;
 }
 
 .character-table th {
-    background-color: #6495ed; /* 矢车菊蓝 */
+    background-color: #F1C454; /* 矢车菊蓝 */
     color: #fff;
 }
 

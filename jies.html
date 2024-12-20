@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>未闻花名 - 角色介绍</title>
+  <title>丑团外卖 - 菜品介绍</title>
   <link rel="stylesheet" href="index.css">
   <script src="index.js" defer></script>
   <style>#test{background-color:cyan;}
@@ -15,10 +15,14 @@
   body{background-image:url(image/背景.jpg);
   background-attachment:scroll;}
   
-  .pink{color: #FF0CB}
+  .pink{color: #FF0CBB}
   
   h3{width:200px; height:50px; border-style:solid;}
   .ten{border-width:10px}
+  
+  div{text-align:center;border:2px solid red; margin:20px;padding:20px;}
+  div.main-nav{border-radius:20px}
+  div.about-us{border-top-left-radius:20px}
   
   </style>
 </head>
@@ -26,81 +30,74 @@
 <header>
   <div class="logo-title">
     <img src="logo.png" alt="网站Logo">
-    <h1>未闻花名</h1>
+    <h1>丑团外卖</h1>
   </div>
 </header>
-  <nav class="main-nav">
-    <ul>
-      <li><a href="index.html">首页</a></li>
-      <li class="dropdown"><a href="jies.html">菜品介绍</a>
-        <!--    <ul class="dropdown-content">
-                <li><a href="#character1">角色1</a></li>
-                <li><a href="#character2">角色2</a></li>
-            </ul>-->
-      </li>
-      <li><a href="shi.html">推荐菜品</a></li>
-      <li><a href="denglu.html">登录</a></li>
-    </ul>
-  </nav>
-  <nav class="side-nav">
-    <ul>
-      <li><a href="#section1">部分1</a></li>
-      <li><a href="#section2">部分2</a></li>
-      <li><a href="#section3">部分3</a></li>
-      <li><a href="#section4">部分4</a></li>
-    </ul>
-  </nav>
-  <!-- 角色介绍表单 -->
-  <div class="characters-form">
-    <h2>菜品介绍</h2>
-    <table class="character-table">
-      <tr>
-        <th id="test">菜品图片</th>
-        <th id="test1">菜品名称</th>
-        <th>菜品简介</th>
-      </tr>
-      <tr>
-        <td>
-          <img src="白切鸡.jpg" alt="本间芽衣子" class="character-img">
-        </td>
-        <td class="orange">白切鸡</td>
-        <td>白切鸡又叫白斩鸡，是中国八大菜之一粤菜系鸡肴中的一种，始于清代的民间酒店。白切鸡通常选用细骨农家鸡与沙姜、蒜茸、葱等食材，慢火煮浸后，晾干切块。成菜后，色洁白带油黄，皮爽肉滑骨香，清淡鲜美。白切鸡是岭南地区的菜，多选用三黄鸡做主料，分布于两广海南地区</td>
-      </tr>
-      <tr>
-        <td>
-          <img src="ong菜.jpg" alt="宿海仁太" class="character-img">
-        </td>
-        <td class="pink">清炒ong菜</td>
-        <td>这个适合做晚餐</td>
-      </tr>
-      <!-- 继续添加其他角色 -->
-    </table>
-  </div>
-  <div class="about-us">
+      
+<!-- 导航栏 -->
+<nav class="main-nav">
+  <ul>
+    <li><a href="index.html">首页</a></li>
+    <li class="dropdown"><a href="jies.html">菜品介绍</a></li>
+    <li><a href="shi.html">后厨环境</a></li>
+    <li><a href="diancan.html">点餐</a></li>
+    <li><a href="cont.html">联系我们</a></li>
+    <li><a href="denglu.html">登录</a></li>
+  </ul>
+</nav>
+
+<!-- 菜品介绍表单 -->
+<div class="characters-form">
+  <h2>菜品介绍</h2>
+  <table class="character-table">
+    <tr>
+      <th id="test">菜品图片</th>
+      <th id="test1">菜品名称</th>
+      <th>菜品简介</th>
+    </tr>
+    <tr>
+      <td><img src="白切鸡.jpg" alt="白切鸡" class="character-img"></td>
+      <td class="orange">白切鸡</td>
+      <td>白切鸡又叫白斩鸡，是中国八大菜之一粤菜系鸡肴中的一种，始于清代的民间酒店。白切鸡通常选用细骨农家鸡与沙姜、蒜茸、葱等食材，慢火煮浸后，晾干切块。成菜后，色洁白带油黄，皮爽肉滑骨香，清淡鲜美。白切鸡是岭南地区的菜，多选用三黄鸡做主料，分布于两广海南地区</td>
+    </tr>
+    <tr>
+      <td><img src="ong菜.jpg" alt="清炒ong菜" class="character-img"></td>
+      <td class="pink">清炒ong菜</td>
+      <td>这个适合做晚餐。</td>
+    </tr>
+    <tr>
+      <td><img src="生蚝.jpeg" alt="蒜蓉烤生蚝" class="character-img"></td>
+      <td class="pink">蒜蓉烤生蚝</td>
+      <td>‌蒜蓉生蚝是一道以生蚝为主要原料，搭配蒜蓉、香葱、小米辣等辅料制作的菜肴。‌这道菜不仅味道鲜美，还富含丰富的营养成分，包括蛋白质、氨基酸、铁和碘等物质，有助于改善血液循环和增强免疫力。‌</td>
+    </tr>
+    <tr>
+      <td><img src="羊肉串.jpeg" alt="碳烤羊肉串" class="character-img"></td>
+      <td class="pink">碳烤羊肉串</td>
+      <td>烤羊肉串，在新疆是最有名的民族风味小吃之一。制作原料主要有羊肉、洋葱、盐等。把羊肉与洋葱拌匀腌渍一段时间可减少膻味。历史起源 从考古资料看，早在1800年前，中国内地就已有了烤羊肉串。《汉代画像》全集中就有烤羊肉串的石刻图像。</td>
+    </tr>
+    <tr>
+      <td><img src="糖醋排骨.jpeg" alt="糖醋排骨" class="character-img"></td>
+      <td class="pink">糖醋排骨</td>
+      <td>‌糖醋排骨是一道经典的中国菜肴，以其独特的酸甜口感和诱人的香气深受人们喜爱。‌这道菜源于中国南方，主要食材是猪排骨，通过独特的烹饪技巧使肉质鲜嫩，外皮酥脆，味道酸甜可口。</td>
+    </tr>
+  </table>
+</div>
+
+<div class="about-us">
   <h3 class="ten">关于我们：大排档背后的热忱与坚守</h3>
   <p class="pink">在城市的霓虹灯火与车水马龙之间，有一处充满故事与烟火气的所在 —— 我们的大排档。
-多年前，怀揣着对美食的无限热爱与对生活的炽热憧憬，我们开启了这段大排档之旅。从最初那个毫不起眼的街边小摊，到如今已成为众多食客心中的美食地标，每一步都走得坚定且饱含深情。
-我们坚信，美食是连接人与人之间情感的桥梁。因此，在食材的挑选上，我们始终坚守严苛的标准。每日清晨，穿梭于熙熙攘攘的菜市场，与熟悉的摊主们精心挑选每一颗新鲜的蔬菜、每一块鲜嫩的肉类、每一只活蹦乱跳的海鲜。这些带着大自然气息与新鲜活力的食材，是我们打造美味佳肴的基石。
-多年来，我们见证了无数的欢笑与泪水，陪伴着一批又一批的食客度过了难忘的欢聚时刻。情侣们在这里开启甜蜜的约会，朋友们在这里畅聊人生的喜怒哀乐，家人们在这里共享天伦之乐。每一张桌子都承载着一段段珍贵的回忆，每一个角落都弥漫着浓浓的情谊。
-未来，我们将继续坚守这份初心与热忱，不断努力提升品质与服务，用美食续写更多的故事，用热情迎接每一位朋友的到来。因为在我们心中，这不仅仅是一个大排档，更是一份情感的寄托，一个属于大家的美食乐园。
-	</div>
-
-  
-  
+    多年前，怀揣着对美食的无限热爱与对生活的炽热憧憬，我们开启了这段大排档之旅。从最初那个毫不起眼的街边小摊，到如今已成为众多食客心中的美食地标，每一步都走得坚定且饱含深情。
+    我们坚信，美食是连接人与人之间情感的桥梁。因此，在食材的挑选上，我们始终坚守严苛的标准。每日清晨，穿梭于熙熙攘攘的菜市场，与熟悉的摊主们精心挑选每一颗新鲜的蔬菜、每一块鲜嫩的肉类、每一只活蹦乱跳的海鲜。这些带着大自然气息与新鲜活力的食材，是我们打造美味佳肴的基石。
+    多年来，我们见证了无数的欢笑与泪水，陪伴着一批又一批的食客度过了难忘的欢聚时刻。情侣们在这里开启甜蜜的约会，朋友们在这里畅聊人生的喜怒哀乐，家人们在这里共享天伦之乐。每一张桌子都承载着一段段珍贵的回忆，每一个角落都弥漫着浓浓的情谊。
+    未来，我们将继续坚守这份初心与热忱，不断努力提升品质与服务，用美食续写更多的故事，用热情迎接每一位朋友的到来。因为在我们心中，这不仅仅是一个大排档，更是一份情感的寄托，一个属于大家的美食乐园。</p>
 </div>
+
 <footer>
-  <p>&copy; 鱼粤.</p>
+  <p>&copy; 2024 丑团外卖。版权所有。</p>
   <div class="social-media">
-    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+    <a href="https://space.bilibili.com/352914718" target="_blank"><img src="bilibili.png" alt="B站主页"></a>
+    <a href="https://github.com/XiaoyuMeow/XiaoyuMeow.github.io/tree/main" target="_blank"><img src="gitHub.png" alt="Github"></a>
   </div>
 </footer>
 </body>
 </html>
-
-
-
-
-
-

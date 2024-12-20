@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外卖点餐页面</title>
+    <link rel="stylesheet" href="index.css"> <!-- 引用你的CSS文件 -->
+</head>
+<body>
+    <!-- 头部区域 -->
+    <header>
+        <div class="logo-title">
+            <img src="logo.png" alt="Logo">
+            <h1>丑团外卖</h1>
+        </div>
+    </header>
+
+    <!-- 主体盒子 -->
+    <div class="main-container">
+        <!-- 导航栏 -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li class="dropdown"><a href="jies.html">菜品介绍</a>
+                </li>
+                <li><a href="shi.html">后厨环境</a></li>
+                <li><a href="diancan.html">点餐</a></li>
+                <li><a href="cont.html">联系我们</a></li>
+                </li>
+                <li><a href="denglu.html">登录</a></li>
+
+            </ul>
+        </nav>
+
+
+        <!-- 点餐部分 -->
+        <div class="order-section">
+            <h2>点餐</h2>
+            <form>
+                <label for="food">选择菜品:</label>
+                <select id="food" name="food">
+                    <option value="白切鸡">白切鸡</option>
+                    <option value="ong菜">炒ong菜</option>
+                    <option value="碳烤羊肉串">碳烤羊肉串</option>
+                    <option value="蒜蓉烤生蚝">蒜蓉烤生蚝</option>
+                    <option value="糖醋排骨">糖醋排骨</option>
+                </select>
+                <br>
+                <label for="quantity">数量:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10">
+                <br>
+                <button type="submit">提交订单</button>
+            </form>
+        </div>
+
+        <!-- 显示地理位置 -->
+        <div id="location" style="margin-top: 20px; padding: 10px; background-color: #f0f8ff; border-radius: 10px;">
+            正在获取地理位置...
+        </div>
+    </div>
+
+    <!-- 底部区域 -->
+    <footer>
+        <p>&copy; 2024 丑团外卖。版权所有。</p>
+        <div class="social-media">
+            <a href="https://space.bilibili.com/352914718" target="_blank"><img src="bilibili.png" alt="B站主页"></a>
+            <a href="https://github.com/XiaoyuMeow/XiaoyuMeow.github.io/tree/main" target="_blank"><img src="gitHub.png" alt="Github"></a>
+        </div>
+    </footer>
+
+    <!-- 侧导航栏 -->
+    <aside class="side-nav">
+        <ul>
+            <li><a href="#">快速链接1</a></li>
+            <li><a href="#">快速链接2</a></li>
+        </ul>
+    </aside>
+
+    <!-- 获取地理位置的JavaScript代码 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition, showError);
+            } else {
+                document.getElementById('location').innerHTML = '浏览器不支持地理定位。';
+            }
+        });
+
+        function showPosition(position) {
+            const lat = position.coords.latitude;
+            const lon = position.coords.longitude;
+            document.getElementById('location').innerHTML = '纬度: ' + lat + '<br>经度: ' + lon;
+        }
+
+        function showError(error) {
+            switch(error.code) {
+                case error.PERMISSION_DENIED:
+                    document.getElementById('location').innerHTML = '用户拒绝了请求地理定位。';
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    document.getElementById('location').innerHTML = '位置信息不可用。';
+                    break;
+                case error.TIMEOUT:
+                    document.getElementById('location').innerHTML = '请求用户地理位置超时。';
+                    break;
+                case error.UNKNOWN_ERROR:
+                    document.getElementById('location').innerHTML = '发生未知错误。';
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
