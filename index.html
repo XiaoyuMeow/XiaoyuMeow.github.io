@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+	<style>
+		h3{color:purple}p{background-color:yellow}
+		</style>
+</head>
+<body>
+<header>
+    <div class="logo-title">
+        <img src="logo.png" alt="网站Logo">
+        <h1 style="font-family: 楷体;color:springgreen;font-size: 38px"><i>丑团外卖</i></h1>
+    </div>
+</header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li class="dropdown"><a href="jies.html">菜品介绍</a>
+            <!--    <ul class="dropdown-content">
+                    <li><a href="#character1">角色1</a></li>
+                    <li><a href="#character2">角色2</a></li>
+                </ul>-->
+            </li>
+            <li><a href="shi.html">推荐菜品</a></li>
+            <li><a href="denglu.html">登录</a></li>
+
+        </ul>
+    </nav>
+	<div class="main-container">
+    <div class="carousel">
+        <img src="大排档.jpeg" alt="图片1">
+        <img src="档内.jpg" alt="图片2">
+        <img src="桌前.jpg" alt="图片3">
+        <button class="prev">上一张</button>
+        <button class="next">下一张</button>
+		</hr>
+    </div>
+    <nav class="side-nav">
+        <ul>
+            <li><a href="#anime-introduction">菜品介绍</a></li>
+            <li><a href="#characters-introduction">主要菜品</a></li>
+            <li><a href="#recommended-episodes">推荐菜品</a></li>
+            <li><a href="#audience-reviews">外送评价</a></li>
+        </ul>
+    </nav>
+    <!-- 门户介绍部分 -->
+    <div id="anime-introduction" class="anime-introduction">
+        <h2>关于丑团</h2>
+        <p>新鲜食材，是我们的坚守。每日清晨，从市场精心挑选的各类海鲜、肉类、蔬菜，带着泥土的芬芳与露水的滋润，汇聚于此。活蹦乱跳的虾蟹，鲜嫩肥美的鱼贝，仿佛在向食客们诉说着它们的新鲜与美味。
+丰富菜品，满足多元味蕾。无论是香辣过瘾的麻辣小龙虾，壳红肉白，入口鲜辣劲爽，让你欲罢不能；还是香气四溢的碳烤羊肉串，滋滋冒油，孜然与羊肉的香味完美融合，一口一串，根本停不下来；亦或是清爽可口的凉拌时蔬，解腻又开胃，总有一款能击中你内心深处的美食渴望。
+平价消费，尽享美食盛宴。在 [大排档名字]，你无需担心价格会成为享受美食的阻碍。实惠的价格，超高的性价比，让你可以尽情点单，大快朵颐，毫无负担。
+贴心服务，为欢聚时刻加分。我们的服务人员热情周到，随叫随到，用真诚的笑容和高效的服务，为你的用餐体验保驾护航。无论是加菜添酒，还是处理各种小需求，都会第一时间为你妥善解决。丑团外卖是一家经营了上千年的外送店家，还支持线下就餐。本店美食众多，菜品美味多样，是你吃饭的不二之地！快来挑选你最喜欢的佳肴吧！</p>
+    </div>
+
+    <!-- 主要内容介绍部分 -->
+    <div id="characters-introduction" class="characters-introduction">
+        <h2>主要菜品</h2>
+		<div class="character" id="character1">
+            <img src="酸菜鱼.jpeg" alt="本间芽衣子" class="character-img">
+            <h3>酸菜鱼：口味酸辣可口，鱼含丰富优质蛋白。</h3>
+            
+			
+        </div>
+		<div class="character" id="character1">
+            <img src="白切鸡.jpg" alt="本间芽衣子" class="character-img">
+            <h3>白切鸡：经典粤菜，岭南风味</h3>
+            
+			
+        </div>
+        <div class="character" id="character1">
+            <img src="糖醋排骨.jpeg" alt="本间芽衣子" class="character-img">
+            <h3>糖醋排骨：肉质鲜嫩，成菜色泽红亮油润。</h3>
+            
+			
+        </div>
+        <div class="character" id="character2">
+            <img src="ong菜.jpg" alt="宿海仁太" class="character-img">
+            <h3>酸笋炒ong菜：可以当吸管的菜</h3>
+        </div>
+        <!-- 继续添加其他角色 -->
+    </div>
+	
+	<div id="characters-introduction" class="characters-introduction">
+        <h2 style="background-color:green">
+		今日特价
+		</h2>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<table border="1">
+			<tr>
+			<th>菜品名称</th>
+			<th>菜品描述</th>
+			<th>价格</th>
+			</tr>
+			<tr>
+			<td>麻辣小龙虾</td>
+			<td>精选鲜活小龙虾，搭配多种秘制香料，麻辣鲜香，虾肉 Q 弹入味。</td>
+			<td>88 元/份</td>
+			</tr>
+			<tr>
+			<td>碳烤羊肉串</td>
+			<td>新鲜羊肉切块串起，炭火烤制，外焦里嫩，孜然与羊肉香完美融合。</td>
+			<td>5 元/串</td>
+			</tr>
+			<tr>
+			<td>香辣蟹</td>
+			<td>肥美的螃蟹，经香辣酱料爆炒，蟹肉鲜嫩多汁，香辣滋味令人陶醉。</td>
+			<td>98 元/份</td>
+			</tr>
+			<tr>
+			<td>蒜蓉烤生蚝</td>
+			<td>肥美的生蚝，铺上满满蒜蓉，烤至金黄，蒜香与蚝鲜相得益彰。</td>
+			<td>10 元/只</td>
+			</tr>
+		</table>
+    </div>
+	
+
+    <!-- 宣传片部分 -->
+    <div id="recommended-episodes" class="recommended-episodes">
+        <h2>推荐菜品</h2>
+        <div class="episode">
+            <img src="白切鸡.jpg" alt="剧集1" class="episode-img">
+            <h3>白切鸡</h3>
+            <!--<p>菜品简介：白切鸡又叫白斩鸡，是中国八大菜之一粤菜系鸡肴中的一种，始于清代的民间酒店。</p>-->
+        </div>
+        <div class="episode">
+            <img src="ong菜.jpg" alt="剧集2" class="episode-img">
+            <h3>炒ong菜</h3>
+            <!--<p>菜品简介：口感脆嫩的空心菜，搭配蒜末的清香，便是一道美味可口的清炒空心菜。不仅价格实惠，做法也是超级简单。</p>-->
+        </div>
+        <!-- 继续添加其他推荐剧集 -->
+    </div>
+
+    <!-- 菜品评价部分 -->
+    <div id="audience-reviews" class="audience-reviews">
+        <h2>菜品评价</h2>
+        <div class="review">
+            <p>"白切鸡做得非常不错" - 小明</p>
+            <p>评分：★★★★★</p>
+        </div>
+        <div class="review">
+            <p>"酸笋炒ong菜送粥吃很合适。" - 小红</p>
+            <p>评分：★★★★★</p>
+        </div>
+        <!-- 继续添加其他评价 -->
+    </div>
+</div>
+<footer>
+    <p>&copy; 大作业.</p>
+    <div class="social-media">
+        <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+        <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+    </div>
+</footer>
+</body>
+</html>
+
